@@ -1,0 +1,78 @@
+// 1. Ans:-  **********************************************************/*
+function foo() {
+  console.log("foo");
+  bar();
+}
+
+function bar() {
+  console.log("bar");
+}
+
+// Call the foo function to see the output
+foo();
+
+// 2. Ans:-  **********************************************************/*
+function getAverage(assignment1, assignment2, assignment3) {
+  var total = assignment1 + assignment2 + assignment3;
+  var average = total / 3;
+  return average;
+}
+
+var assignment1markes = 99;
+var assignment2markes = 98;
+var assignment3markes = 97;
+
+var myAverage = assignment1markes + assignment2markes + assignment3markes;
+// myAverage = myAverage.toFixed(2);
+console.log(myAverage);
+
+// 2. Ans:-  **********************************************************/*
+function make_avg(num1, num2, num3) {
+  return (num1 + num2 + num3) / 3;
+}
+
+// Example usage:
+var result = make_avg(10, 20, 30);
+console.log("The average is:", result);
+
+// 3. Ans:-  **********************************************************/*
+function make_avg(arr, size) {
+  if (size <= 0) {
+    return "Array size must be greater than 0.";
+  }
+
+  var sum = 0;
+  for (var i = 0; i < size; i++) {
+    sum += arr[i];
+  }
+
+  return sum / size;
+}
+
+// Example usage:
+var array = [1, 2, 3, 4, 5, 6, 7];
+var arraySize = array.length;
+
+console.log("The average is:", make_avg(array, arraySize));
+
+// 4. Ans:- **********************************************************/*
+// 1. Has return and has parameter
+function odd_even_return_with_param(number) {
+  return number % 2 === 0 ? "Even" : "Odd";
+}
+
+// 2. No return and has parameter
+function odd_even_no_return_with_param(number) {
+  if (number % 2 === 0) {
+    console.log("Even");
+  } else {
+    console.log("Odd");
+  }
+}
+
+// Example usage for the functions with return
+var resultWithReturn = odd_even_return_with_param(5);
+console.log("Result with return:", resultWithReturn);
+
+// Example usage for the functions with no return
+odd_even_no_return_with_param(8);
